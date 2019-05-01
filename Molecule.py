@@ -80,7 +80,7 @@ class Molecule:
                 else:
                     raise IOError("LIMIT keyword %s not found"%w[1])
             
-            elif record=='ATOM':
+            elif record=='ATOM' or record=='HETATM':
                 w=[]
                 w.append(int(line[6:11]))
 
